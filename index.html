@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mozilla Automation Weekly Etherpad Bookmarklet</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.4em;
+        max-width: 600px;
+        margin: 40px auto;
+      }
+      h1 {
+        line-height: 1.2em;
+      }
+      .bookmarklet {
+        background: rgba(0,0,0,0.1);
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.75);
+        color: black;
+        display: inline-block;
+        font-size: 0.8em;
+        margin: 20px auto;
+        padding: 5px 10px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mozilla Automation Weekly Etherpad Bookmarklet</h1>
+    <p>For those of us lazy enough to update the Weekly Etherpad Bookmark link every week, this handy bookmarklet will always point to the current week's etherpad.</p>
+    <p>Just drag the following bookmarklet to your bookmarks toolbar and you're set:
+      <a class="bookmarklet" href="javascript:(function(){function pad(n){return n<10?'0'+n:n};function trim(n){n+='';return (n.length<=2)?n:n[n.length-2]+n[n.length-1]};d=new Date();m=new Date(d.getFullYear(),d.getMonth(),d.getDate()-d.getDay()+1);window.open('https://ateam.etherpad.mozilla.org/mozauto-'+trim(m.getFullYear())+pad(m.getMonth()+1)+m.getDate());}());
+">Weekly Etherpad</a>
+    </p>
+
+  </body>
+</html>
