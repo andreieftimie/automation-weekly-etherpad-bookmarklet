@@ -1,0 +1,1 @@
+javascript:(function(){function pad(n){return n<10?'0'+n:n};function trim(n){n+='';return (n.length<=2)?n:n[n.length-2]+n[n.length-1]};d=new Date();m=new Date(d.getFullYear(),d.getMonth(),d.getDate()-d.getDay()+1);window.open('https://ateam.etherpad.mozilla.org/mozauto-'+trim(m.getFullYear())+pad(m.getMonth()+1)+m.getDate());}());
