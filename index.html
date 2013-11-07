@@ -30,7 +30,7 @@
     <h1>Mozilla Automation Weekly Etherpad Bookmarklet</h1>
     <p>For those of us lazy enough to update the Weekly Etherpad Bookmark link every week, this handy bookmarklet will always point to the current week's etherpad.</p>
     <p>Just drag the following bookmarklet to your bookmarks toolbar and you're set:
-      <a class="bookmarklet" href="javascript:(function(){function pad(n){return n<10?'0'+n:n};function trim(n){n+='';return (n.length<=2)?n:n[n.length-2]+n[n.length-1]};d=new Date();m=new Date(d.getFullYear(),d.getMonth(),d.getDate()-d.getDay()+1);window.open('https://ateam.etherpad.mozilla.org/mozauto-'+trim(m.getFullYear())+pad(m.getMonth()+1)+m.getDate());}());
+      <a class="bookmarklet" href="javascript:(function(){function pad(n){return n<10?'0'+n:n};function trim(n){n+='';return (n.length<=2)?n:n[n.length-2]+n[n.length-1]};d=new Date();m=new Date(d.getFullYear(),d.getMonth(),d.getDate()-d.getDay()+1);window.open('https://ateam.etherpad.mozilla.org/mozauto-'+trim(m.getFullYear())+pad(m.getMonth()+1)+pad(m.getDate()));}());
 ">Weekly Etherpad</a>
     </p>
 
